@@ -76,7 +76,7 @@ endif()
 
 if(orb_BUILD_FUZZ_TESTS)
   message(AUTHOR_WARNING "Building Fuzz Tests, using fuzzing sanitizer https://www.llvm.org/docs/LibFuzzer.html")
-  if (NOT orb_ENABLE_SANITIZER_ADDRESS AND NOT orb_ENABLE_SANITIZER_THREAD)
+  if (NOT ORB_ENABLE_SANITIZER_ADDRESS AND NOT ORB_ENABLE_SANITIZER_THREAD)
     message(WARNING "You need asan or tsan enabled for meaningful fuzz testing")
   endif()
   add_subdirectory(fuzz_test)

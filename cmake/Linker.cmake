@@ -18,7 +18,7 @@ macro(orb_configure_linker project_name)
         "Using custom linker: '${USER_LINKER_OPTION}', explicitly supported entries are ${USER_LINKER_OPTION_VALUES}")
   endif()
 
-  if(NOT orb_ENABLE_USER_LINKER)
+  if(NOT ORB_ENABLE_USER_LINKER)
     return()
   endif()
 

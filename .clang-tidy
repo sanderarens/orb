@@ -26,8 +26,6 @@ CheckOptions:
     value: 'x|y|z'
   - key: readability-identifier-length.IgnoredParameterNames
     value: 'x|y|z'
-
-
-
-
-
+  # ignore 'no header providing "std::operator""s" is directly included'
+  - key: misc-include-cleaner.IgnoreHeaders
+    value: bits/basic_string.h
